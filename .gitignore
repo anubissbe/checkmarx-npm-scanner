@@ -32,6 +32,19 @@ checkmarx_scan_report.json
 
 # Credentials (IMPORTANT: Never commit API keys)
 .env
+.env.*
+*.env
 *.key
+*.token
 credentials.json
 config.json
+api_key.txt
+token.txt
+secrets.json
+
+# Checkmarx scan results (may contain sensitive project information)
+*_scan.json
+*_npm_scan.json
+toyota_npm_scan.json
+scan_results/
+results/

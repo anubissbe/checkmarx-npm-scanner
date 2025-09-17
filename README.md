@@ -14,9 +14,25 @@ pip install -r requirements.txt
    - Go to Settings → API Keys
    - Create a new API key (this will be your refresh token)
 
+3. Configure credentials (recommended approach):
+   - Copy `.env.example` to `.env`
+   - Edit `.env` and add your API key and tenant name:
+   ```bash
+   cp .env.example .env
+   # Edit .env with your actual values:
+   # API_KEY=your_actual_api_key_here
+   # TENANT=your_tenant_name_here
+   ```
+
 ## Usage
 
-### Basic usage:
+### Basic usage with .env file (recommended):
+```bash
+# If you've configured .env with API_KEY and TENANT
+python checkmarx_package_scanner.py
+```
+
+### Manual API key usage:
 ```bash
 python checkmarx_package_scanner.py \
   --api-key "YOUR_API_KEY" \
