@@ -28,7 +28,7 @@ class CheckmarxScanner:
 
         # Checkmarx One EU endpoints
         self.iam_base_url = f"https://eu.iam.checkmarx.net"
-        self.api_base_url = f"https://eu.api.checkmarx.net"
+        self.api_base_url = f"https://eu.ast.checkmarx.net"
 
         self.access_token = None
         self.headers = {}
